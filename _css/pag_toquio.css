@@ -1,0 +1,215 @@
+
+.conteudo_toquio {
+    grid-area: parte01;
+}
+#tit {
+    margin: 0em;
+}
+
+.txt1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+.txt2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+h2, p {
+    text-align: center;
+
+}
+ /* RESPONSIVIDADE */
+
+@media screen and (min-width : 320px) {
+    .conteudo_toquio {
+        display: flex;
+        flex-direction: column;
+        margin: 1% 2% 1% 2%;
+        
+    } 
+    .txt2 {
+        border-top: solid 1px;
+        border-color: #5B8EFF;
+        margin: 20px 0 20px 0;
+        
+    }
+    #arouselExampleControls {
+        border-bottom: solid 1px;
+        border-color: #5B8EFF;
+        margin: 20px 0 20px 0;
+    }
+    .det_img01 {
+        border-bottom: solid 1px;
+        border-color: #5B8EFF;
+        margin: 20px 0 20px 0;
+    }
+    .det_img02 {
+        border-bottom: solid 1px;
+        border-color: #5B8EFF;
+        margin: 20px 0 20px 0;
+    }
+    .det_img03 {
+        border-bottom: solid 1px;
+        border-color: #5B8EFF;
+        margin: 20px 0 20px 0;
+    
+    }
+}
+
+
+@media screen and (min-width : 720px) {
+    .conteudo_toquio {
+        display: grid;
+        grid-template-areas: 
+        "titulo" "titulo"
+        "img_p" "txt1"
+        "txt2" "car" 
+        "img01" "img02" 
+        "img03" "img04";
+        grid-template-rows: 5% 18% 25% 26% 26%;
+        grid-template-columns: 48% 48%;
+        row-gap: 15px;
+        column-gap: 10px;
+        margin: 0% 2% 0% 2%;
+    }
+    #tit {
+        grid-area: titulo;
+        grid-row: 1 / 1;
+        grid-column: 1 /3;   
+    }
+    #img_p {
+        grid-area: img_p;
+        grid-row: 2 / 2;
+        grid-column: 1 /1;
+    }
+    .txt1 {
+        grid-area: img01;
+        grid-area: txt1;
+        grid-row: 2 / 2;
+        grid-column: 2 /2;
+    }
+    .txt2 {
+        grid-area: txt2;
+        grid-row: 3 / 3;
+        grid-column: 1 /1;
+        border-top: transparent;
+        border-color:none;
+        margin: 10px 0 10px 0;      
+    }
+    #arouselExampleControls {
+        grid-area: car; 
+        grid-row: 3 / 3;
+        grid-column: 2 /3;
+        border-bottom: transparent;
+        border-color:none;
+        margin: 10px 0 10px 0;     
+    }    
+    .det_img01 {
+        grid-area: img01;
+        grid-row: 4 / 4;
+        grid-column: 1 / 1;
+        border-bottom: transparent;
+        border-color: none;
+        margin: 0px;
+    }
+    .det_img02 {
+        grid-area: img02;
+        grid-row: 4 / 4;
+        grid-column: 2 / 2;
+        border-bottom: transparent;
+        border-top: transparent;
+        border-color:none;
+        margin: 10px 0 10px 0;
+    }
+    .det_img03 {
+        grid-area: img03;
+        grid-row: 5 / 5;
+        grid-column: 1 / 1;
+        border-top: transparent;
+        border-color:none;
+        margin: 10px 0 10px 0;
+    
+    }
+    .det_img04 {
+        grid-area: img04;
+        grid-row: 5 / 5;
+        grid-column: 2 / 2;
+    
+    }
+}
+@media screen and (min-width : 1200px) {
+    .conteudo_toquio {
+        display: grid;
+        grid-template-areas: 
+        "titulo" "titulo" "titulo"
+        "img_p" "img_p" "txt1"
+        "txt2" "car" "img01"
+        "img02" "img03" "img04";        
+        grid-template-rows: 8% 32% 30% 30%;
+        grid-template-columns: 30% 30% 30%;
+        row-gap: 15px;
+        column-gap: 15px;
+        margin: 0% 3% 0% 3%;
+    }
+    #tit {
+        grid-row: 1 / 1;
+        grid-column: 1 /4;    
+    }
+    #img_p {
+        grid-row: 2 / 2;
+        grid-column: 1 /3;
+    }
+    .txt1 {
+        grid-row: 2 / 2;
+        grid-column: 3 /3;
+        border-color: none;
+        margin: 0px;
+    }
+    .txt2 {
+        grid-row: 3 / 3;
+        grid-column: 1 /1; 
+        border-color: none;
+        margin: 0px;
+
+    }
+    #arouselExampleControls {
+        grid-row: 3 / 3;
+        grid-column: 2 /2;         
+    }
+        
+    .det_img01 {
+        grid-row: 3 / 3;
+        grid-column: 3 /3;
+        border-color: none;
+        margin: 0px;
+    }
+    .det_img02 {
+        grid-row: 4 / 4;
+        grid-column: 1 /1;
+        border-color: none;
+        margin: 0px;
+    }
+    .det_img03 {
+        grid-row: 4 / 4;
+        grid-column: 2 /2;
+        border-color: none;
+        margin: 0px;
+    
+    }
+    .det_img04 {
+        grid-row: 4 / 4;
+        grid-column: 3 /3;
+        border-bottom: transparent;
+        border-top: transparent;
+        border-color:none;
+        margin: 10px 0 10px 0;;
+    
+    }
+}
